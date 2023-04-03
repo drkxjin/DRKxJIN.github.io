@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    padding: 1rem 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 35px;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #eec53d;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eec53d;
+}
+#row1 {
+    height: 20px;
+}
+
+
+#row3 {
+    width: 50%;
+    background-color: red;
+    height: 20px;
+    /* display: inline-block; */
+    float: left;
+
+}
+
+#row2 {
+    width: 50%;
+    background-color: blue;
+    height: 20px;
+    float: left;
+}
+
+#herosection {
+    height: 20px;
+}
+
+#section2,
+#section3 {
+    width: 50%;
+    background-color: red;
+    height: 20px;
+    /* display: inline-block; */
+    float: left;
+
+}
+
+#section5 {
+    height: 20px;
+}
+
+#section6,
+#section7 {
+    width: 50%;
+    background-color: green;
+    height: 20px;
+    /* display: inline-block; */
+    float: left;  
+}
+#section8 {
+    height: 20px;
+}
+#section9,
+#section10 {
+    width: 50%;
+    background-color: green;
+    height: 20px;
+    /* display: inline-block; */
+    float: left;
+}
+
+#section11 {
+    height: 20px;
+}
+#section12,
+#section13
+{
+width: 50%;
+background-color: green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section14 {
+    height: 20px;
+}
+#section15,
+#section16
+{
+width: 50%;
+background-color: green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+
+}
+#section17 {
+    height: 20px;
+}
+#section18,
+#section19
+{
+width: 50%;
+background-color: green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section20 {
+    height: 20px;
+}
+#section21,
+#section22
+{
+width: 50%;
+background-color: green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section23 {
+    height: 20px;
+}
+#section24,
+#section25
+{
+width: 50%;
+background-color: green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section26 {
+    height: 20px;
+}
+#section27
+
+{
+width: 50%;
+background-color:red;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section28
+{
+width: 50%;
+background-color:blue;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section29 {
+    height: 20px;
+}
+#section30
+
+{
+width: 90%;
+background-color:green;
+
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section31
+{
+width: 10%;
+background-color:blue;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section32{
+    height: 20px;
+}
+#section33
+
+{
+width: 10%;
+background-color:red;
+
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section34
+{
+width: 80%;
+background-color:green;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section35
+{
+width: 10%;
+background-color:blue;
+height: 20px;
+/* display: inline-block; */
+float: left;
+}
+#section36{
+    height: 20px;
+}
+#section37{
+    width: 90%;
+    background-color: red;
+    height: 20px;
+    float: left;
+}
+#section38{
+    width: 10%;
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section39{
+    height: 20px;
+}
+#section40{
+    width: 48%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section41{
+    width: 4%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section42{
+    width: 48%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section43{
+    height: 20px;
+}
+#section44{
+    width: 48%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section45{
+    width: 4%;
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section46{
+    width: 48%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section47{
+    height: 20px;
+}
+#section48{
+    width: 5%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section49{
+    width: 95%;
+    background-color:blue;
+    color: green;
+    height: 20px;
+    float: left;
+}
+#section50{
+    height: 20px;
+}
+#section51{
+    width:4%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section52{
+    width:20%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section53{
+    width: 4%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section54{
+    width:20%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section55{
+    width: 4%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section56{
+    width: 20%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section57{
+    width: 4%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section58{
+    width:20%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section59{
+    width:4%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section60{
+    height: 20px;
+}
+#section61{
+    width:18%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section62{
+    width:2%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section63{
+    width: 18%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section64{
+    width:2%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section65{
+    width: 18%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section66{
+    width: 2%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section67{
+    width: 18%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+#section68{
+    width:2%;
+    background-color:green;
+    
+    height: 20px;
+    float: left;
+}
+#section69{
+    width:20%;
+    background-color:yellow;
+    
+    height: 20px;
+    float: left;
+}
+
+#section70{
+    width:50%;
+height: 20px;
+}
+#section71{
+    width:25%;
+    background-color: red;
+    height: 20px;
+    float: left;
+}
+#section72{
+    width:25%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section73{
+    width:50%;
+height: 20px;
+}
+#section74{
+    width:40%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section75{
+    width:10%;
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section76{
+    width:50%;
+height: 20px;
+}
+#section77{
+    width:5%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section78{
+    width:40%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section79{
+    width:5%;
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section80{
+    width:50%;
+height: 20px;
+}
+#section81{
+    width:40%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section82{
+    width:10%;
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section83{
+    width:50%;
+height: 20px;
+}
+#section84{
+    width:50%;
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section85{
+    width:2%;
+    
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section86{
+    width:50%;
+height: 20px;
+}
+#section87{
+    width:20%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section88{
+    width:10%;
+    
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section89{
+    width:20%;
+    
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section90{
+    width:50%;
+height: 20px;
+}
+#section91{
+    width:20%;
+    background-color:red;
+    height: 20px;
+    float: left;
+}
+#section92{
+    width:30%;
+    
+    background-color:blue;
+    height: 20px;
+    float: left;
+}
+#section93{
+    width:10%;
+    
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section94{
+    width:50%;
+height: 20px;
+}
+#section95{
+    width:8%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section96{
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section97{
+    width:8%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section98{
+    width:2%;
+    background-color:green;
+    height: 20px;
+    float: left;
+    
+
+}
+#section99{
+    width:8%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section100{
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section101{
+    width:8%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+
+}
+
+
+
+#section102{
+    
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section103{
+    
+    width:10%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+
+#section104{
+    width:50%;
+height: 20px;
+}
+#section105{
+    width:8%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section106{
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section107{
+    width:8%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section108{
+    width:2%;
+    background-color:green;
+    height: 20px;
+    float: left;
+    
+
+}
+#section109{
+    width:8%;
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section110{
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section111{
+    width:8%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+
+}
+
+
+
+#section112{
+    
+    width:2%;
+    
+    background-color:green;
+    height: 20px;
+    float: left;
+}
+#section113{
+    
+    width:10%;
+    
+    background-color:yellow;
+    height: 20px;
+    float: left;
+}
+#section209{
+    
+    background-color: red;
+    width: 20px;
+}
+#section210{
+    
+    background-color:blue;
+    width: 30px;
+}
+#section211{
+    
+    background-color: orange;
+    width: 45px;
+}
+
+    
