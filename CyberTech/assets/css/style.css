@@ -1,0 +1,138 @@
+
+.img-1{
+    background-image: url('Bg.jpg');
+    width: 1366px;
+    height: 600px;
+    position: fixed;
+
+
+}
+
+
+.btn-1 {
+
+    border: 1px solid white;
+    width: 14rem;
+    color: white;
+    border-radius: 12rem;
+
+
+
+
+}
+.nav-item a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+
+}
+.nav-h li:hover{
+    background-color: rgba(240, 248, 255, 0.336);
+    color: white;
+    border-radius: 6px;
+
+
+}
+.nav-h li a:hover{
+
+    color: white;
+}
+.btn-h a:hover{
+    color: white;
+    background-color: rgba(240, 248, 255, 0.432);
+
+
+}
+.brand{
+    color: rgb(241, 232, 232);
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 2.6rem;
+    width: 1rem;
+    
+
+
+}
+.brand:hover{
+    color: white;
+    background-color: rgba(240, 248, 255, 0.39);
+    
+}
+.Adbox{
+    border: 1px solid white;
+    border-radius: 1rem;
+    background-image: url('wp5311756.jpg');
+    backdrop-filter: blur(14px);
+    background-color: transparent;
+    
+
+
+}
+.blur{
+    backdrop-filter: blur(14px);
+
+}
+.btn-tc{
+    border:  1px solid white;
+    border-radius: 1rem;
+    color: rgb(41, 36, 36);
+    width: 5rem;
+    background-color: rgba(240, 248, 255, 0.678);
+
+}
+.btn-tc:hover{
+    background-color: rgba(255, 0, 0, 0.541);
+    color: white;
+    
+
+}
+.btn-close{
+    background-color: rgba(241, 245, 245, 0.959);
+
+
+}
+.Adimg{
+    height: 200px;
+    width: 170px;
+
+
+}
+.bg-gr{
+
+    background-image: linear-gradient();
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.493);
+    border: 1px solid white;
+    color: white;
+    box-shadow: black 5px 5px 5px;
+
+
+}
+.btn-prof{
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+
+
+}
+.btn-prof:hover{
+
+    background-color: rgba(240, 248, 255, 0.349);
+    color: rgb(252, 249, 249);
+
+
+
+}
+.bg-footer{
+    background-color: rgba(0, 0, 0, 0.555);
+
+
+}
