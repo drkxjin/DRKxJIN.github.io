@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body class="" data-layout="{&quot;mode&quot;: &quot;light&quot;, &quot;width&quot;: &quot;fluid&quot;, &quot;menuPosition&quot;: &quot;fixed&quot;, &quot;sidebar&quot;: { &quot;color&quot;: &quot;light&quot;, &quot;size&quot;: &quot;default&quot;, &quot;showuser&quot;: false}, &quot;topbar&quot;: {&quot;color&quot;: &quot;light&quot;}, &quot;showRightSidebarOnPageLoad&quot;: true}" data-sidebar-size="default" data-layout-width="fluid" data-layout-menu-position="fixed" data-sidebar-color="light" data-sidebar-showuser="false" data-topbar-color="light" data-new-gr-c-s-check-loaded="14.1137.0" data-gr-ext-installed="">
+    <div class="wrap">
+
+        <div id="sidebar" class="sidebar">
+            <div class="container-fluid p-1">
+                <a href=""><img src="assets/img/logo-dark.png " alt=""></a>
+                <div class="Dashboard">
+                    <div class="container-fluid Dashboard-1">
+
+                        <a href="#dashboard-item" data-bs-toggle="collapse"><svg style="margin-bottom: 6px;"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-home">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span class="margin-end">Dashboard</span>
+                            <span class="badge bg-success float-end text-white">02</span>
+                        </a>
+                        <div id="dashboard-item" class="collapse lower-child">
+                            <a href="#">
+                                <p class="txt1 mb-0">Ecommerce</p>
+                            </a>
+                            <a href="#">
+                                <p class="txt2">Anaytics</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="text-dark side-text ">APPS</p>
+                    <div class="container-fluid items">
+                        <a href="">
+                            <p class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Calendar</span>
+                            </p>
+                            
+                        </a>
+                        <a href="">
+                            <p class="my-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-message-square">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span>Chat</span>
+                            </p>
+                        </a>
+                        <a href="#email" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-mail">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>Email</span>
+                            </p>
+                        </a>
+                        <div id="email"  class="collapse lower-child">
+                            <a href="">
+                                <p>Inbox</p>
+                            </a>
+                            <a href="">
+                                <p>Read Email</p>
+                            </a>
+                            <a href="">
+                                <p>Compose Email</p>
+                            </a>
+
+                        </div>
+                        
+                        <a href="#project" data-bs-toggle="collapse">
+                            <p class="my-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-briefcase">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <span>Project</span>
+                            </p>
+                        </a>
+                        <div id="project" class="collapse lower-child" >
+                            <a href="">
+                                <p>List</p>
+                            </a>
+                            <a href="">
+                                <p>Details</p>
+                            </a>
+
+                        </div>
+                        <a href="#tasks" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clipboard">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                    </path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                                <span>Tasks</span>
+                            </p>
+                        </a>
+                        <div id="tasks" class="collapse lower-child">
+                          <a href="">
+                            <p>List</p>
+                          </a>
+                          <a href="">
+                            <p>Kanaban Board</p>
+                          </a>
+                        </div>
+                        <a href="">
+                            <p class="mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-plus">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="12" y1="18" x2="12" y2="12"></line>
+                                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                                </svg>
+                                <span>File Manager</span>
+                            </p>
+                        </a>
+                    </div>
+                    <hr>
+                    <p class="text-dark side-text ">CUSTOM</p>
+                    <div class="container-fluid items">
+                        <a href="#pages" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file-text">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>Pages</span>
+                            </p>
+                        </a>
+                        <div id="pages" class="collapse lower-child">
+                            <a href="">
+                                <p>Starter</p>
+                            </a>
+                            <a href="">
+                                <p>Profile</p>
+                            </a>
+                            <a href="">
+                                <p>Activity</p>
+                            </a>
+                            <a href="">
+                                <p>Invoice</p>
+                            </a>
+                            <a href="">
+                                <p>Pricing</p>
+                            </a>
+                            <a href="">
+                                <p>Maintainance</p>
+                            </a>
+                            <a href="">
+                                <p>Login</p>
+                            </a>
+                            <a href="">
+                                <p>Register</p>
+                            </a>
+                            <a href="">
+                                <p>Log Out</p>
+                            </a>
+                            <a href="">
+                                <p>Recover Password</p>
+                            </a>
+                            <a href="">
+                                <p>Lock Screen</p>
+                            </a>
+                            <a href="">
+                                <p>Confirm</p>
+                            </a>
+                            <a href="">
+                                <p>Error 404</p>
+                            </a>
+                            <a href="">
+                                <p>Error 505</p>
+                            </a>
+                        </div>
+                        <a href="#layouts" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-layout">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                                </svg>
+                                <span>Layouts</span>
+                                <span class="badge bg-danger  text-white" style="margin-left: 5rem; font-size: 12px;">New</span>
+
+                            </p>
+                        </a>
+                        <div id="layouts" class="collapse lower-child">
+                           <a href="">
+                            <p>Horizental</p>
+                           </a>
+                           <a href="">
+                            <p>
+                                Detatched
+                            </p>
+                           </a>
+                           <a href="">
+                            <p>Two Column Menu</p>
+                           </a>
+                           <a href="">
+                            <p>Preloader</p>
+                           </a>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <p class="text-dark side-text ">COMPONENTS</p>
+                    <div class="container-fluid items">
+                        <a href="">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-package">
+                                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <span>UI Elements</span>
+                            </p>
+                        </a>
+                        <a href="">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-gift">
+                                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                    <rect x="2" y="7" width="20" height="5"></rect>
+                                    <line x1="12" y1="22" x2="12" y2="7"></line>
+                                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                                </svg>
+                                <span>Widgets</span>
+                            </p>
+                        </a>
+                        <a href="#icons" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-cpu">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                    <rect x="9" y="9" width="6" height="6"></rect>
+                                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                                </svg>
+                                <span>Icons</span>
+                            </p>
+                        </a>
+                        <div id="icons" class="collapse lower-child">
+                            <a href="">
+                                <p>Unicons</p>
+                            </a>
+                            <a href="">
+                                <p>Feather</p>
+                            </a>
+                            <a href="">
+                                <p>Bootstrap</p>
+                            </a>
+                        </div>
+                        <a href="#forms" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bookmark">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span>Forms</span>
+                            </p>
+                        </a>
+                        <div id="forms" class="collapse lower-child">
+                              <a href="">
+                                <p>Basic Elements</p>
+                              </a>
+                                <a href="">
+                                    <p>Advanced</p>
+                                </a>
+                                <a href="">
+                                 <p>Validation</p>
+                                </a>
+                                <a href="">
+                                    <p>Wizard</p>
+                                </a>
+                                <a href="">
+                                    <p>Editor</p>
+                                </a>
+                                <a href="">
+                                    <p>File Upload</p>
+                                </a>
+                        </div>
+                        <a href="#">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bar-chart-2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                                <span>Charts</span>
+                            </p>
+                        </a>
+                        <a href="#tables" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Tables</span>
+                            </p>
+                        </a>
+                        <div id="tables" class="collapse lower-child">
+                             <a href="">
+                                <p>Basic</p>
+                             </a>
+                             <a href="">
+                                <p>Data Tables</p>
+                             </a>
+                        </div>
+                        <a href="#maps" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+                                <span>Maps</span>
+                            </p>
+                        </a>
+                        <div id="maps" class="collapse lower-child">
+                                    <a href="">
+                                        <p>Google Maps</p>
+                                    </a>
+                                    <a href="">
+                                        <p>Vector Maps</p>
+                                    </a>
+                        </div>
+                        <a href="#multilevel" data-bs-toggle="collapse">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                <span>Multi Level</span>
+                            </p>
+                        </a>
+                        <div id="multilevel" class="collapse lower-child">
+                             <a href="#secondlevel" data-bs-toggle="collapse">
+                                <p>Second Level</p>
+                             </a>
+                             <div id="secondlevel" class="collapse ml-3">
+                                  <a href="">
+                                    <p>Item 1</p>
+                                  </a>
+                                  <a href="">
+                                    <p>Item 2</p>
+                                  </a>
+                             </div>
+                             <a href="#thirdlevel" data-bs-toggle="collapse">
+                                <p>Third Level</p>
+                             </a>
+                             <div id="thirdlevel" class="collapse ml-3">
+                                <a href="">
+                                  <p>Item 1</p>
+                                </a>
+                                <a href="">
+                                  <p>Item 2</p>
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="navbar" >
+                <div id="toggle-btn">&#9776;</div>
+                <!-- Navbar content goes here -->
+                <a href="" class="dropdown-toggle  ml-4" data-bs-toggle="dropdown" >Create New</a>
+                <div class="dropdown-menu">
+                    <!-- item-->
+                    <a href="#" class="dropdown-item">
+                        <i class="uil uil-bag me-1"></i><span>New Projects</span>
+                        
+                    </a>
+
+                    <!-- item-->
+                    <a href="#" class="dropdown-item">
+                        <i class="uil uil-user-plus me-1"></i><span>Create Users</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="#" class="dropdown-item">
+                        <i class="uil uil-chart-pie me-1"></i><span>Revenue Report</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="#" class="dropdown-item">
+                        <i class="uil uil-cog me-1"></i><span>Settings</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <!-- item-->
+                    <a href="#"class="dropdown-item">
+                        <i class="uil uil-question-circle me-1"></i><span>Help & Support</span>
+                    </a>
+
+                </div>
+                          
+                <input type="search" class="search" id="search" placeholder="search...">
+                <button class="fa fa-search search-button"
+                    style="border: 1px solid transparent; outline: none;"></button>
+                    
+                <div class="svg-icon ml-5">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-maximize">
+                            <path
+                                d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                            </path>
+                        </svg>
+                    </a>
+                    
+                    <a href="" class="ml-4 dropdown-toggle" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-grid">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                      
+                    </a>
+                    <div class="dropdown-menu dropdown-lg dropdown-menu-end p-0 " >
+    
+                        <div class=" p-4 col-md-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#">
+                                        <img src="assets/img/slack.png" alt="slack"><br>
+                                        <span>Slack</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#">
+                                        <img src="assets/img/github.png" alt="Github">
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-icon-item" href="#">
+                                        <img src="assets/img/dribbble.png" alt="dribbble">
+                                        <span>Dribbble</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="" class="ml-4 dropdown-toggle" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-globe">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" >
+    
+                        <!-- item-->
+                        <a href="" class="dropdown-item">
+                            <img src="assets/img/flags/us.jpg" alt="user-image" class="me-1" height="12"> 
+                            <span class="align-middle">English</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item">
+                            <img src="assets/img/flags/germany.jpg" alt="user-image" class="me-1" height="12"> 
+                            <span class="align-middle">German</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item">
+                            <img src="assets/img/flags/italy.jpg" alt="user-image" class="me-1" height="12"> 
+                            <span class="align-middle">Italian</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item">
+                            <img src="assets/img/flags/spain.jpg" alt="user-image" class="me-1" height="12"> 
+                            <span class="align-middle">Spanish</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="#" class="dropdown-item">
+                            <img src="assets/img/flags/russia.jpg" alt="user-image" class="me-1" height="12"> 
+                            <span class="align-middle">Russian</span>
+                        </a>
+
+                    </div>
+                    <a href="#" class="notification ml-4 dropdown-toggle" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-bell">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                        <span class="badge">6</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-lg" >
+    
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0">
+                                <span class="float-end">
+                                    <a href="" class="text-dark"><small>Clear All</small></a>
+                                </span>Notification
+                            </h5>
+                        </div>
+
+                        <div class="noti-scroll" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item border-bottom">
+                                <div class="notify-icon bg-primary"><i class="uil uil-user-plus"></i></div>
+                                <p class="notify-details">New user registered.<small class="text-muted">5 hours ago</small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item border-bottom">
+                                <div class="notify-icon">
+                                    <img src="assets/images/users/avatar-1.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <p class="notify-details">Karen Robinson</p>
+                                <p class="text-muted mb-0 user-msg">
+                                    <small>Wow ! this admin looks good and awesome design</small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item border-bottom">
+                                <div class="notify-icon">
+                                    <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <p class="notify-details">Cristina Pride</p>
+                                <p class="text-muted mb-0 user-msg">
+                                    <small>Hi, How are you? What about our next meeting</small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item border-bottom active">
+                                <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                                <p class="notify-details">
+                                    Jaclyn Brunswick commented on Dashboard<small class="text-muted">1 min ago</small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item border-bottom">
+                                <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                                <p class="notify-details">
+                                    Caleb Flakelar commented on Admin<small class="text-muted">4 days ago</small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary">
+                                    <i class="uil uil-heart"></i>
+                                </div>
+                                <p class="notify-details">
+                                    Carlos Crouch liked <b>Admin</b> <small class="text-muted">13 days ago</small>
+                                </p>
+                            </a>
+                        </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none; transform: translate3d(0px, 102px, 0px);"></div></div></div>
+
+                        <!-- All-->
+                        <a href="#" class="dropdown-item text-center text-primary notify-item notify-all">
+                            View all <i class="fe-arrow-right"></i>
+                        </a>
+
+                    </div>
+                    <a href="" class="dropdown-toggle ml-4" data-bs-toggle="dropdown">
+                        <img src="assets/img/user.jpg" alt="user-image" class="rounded-circle"
+                            style="width: 2rem;"><span class="ml-2" style="color: #4b4b5a;;">Umer Rafiq</span>
+                        <ul class="dropdown-menu">
+                <li>
+                    <a href="" class="dropdown-item">Welcome !</a>
+                </li>
+                <li>
+                    <a href="" class="dropdown-item">My Account</a>
+                </li>
+                <li>
+                    <a href="" class="dropdown-item">Lock Screen</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="" class="dropdown-item">Logout</a>
+                </li>
+
+            </ul>
+                    </a>
+                    <a href="" class="ml-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-settings">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+               <div class="">
+                <div id="product-information" class="d-flex">
+                    <!-- Product information goes here -->
+                    Dashboard
+                    <div class="Calendar">
+                        <input type="date" id="Calendar" name="Calendar" style="min-width: 220px;padding: 2px;border: 1px solid transparent; outline: none;">
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle " data-bs-toggle="dropdown">
+                            Download
+                            <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></i></button>
+                            <div class="dropdown-menu dropdown-menu-end " style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-22px, 39px);" data-popper-placement="bottom-end">
+                                <a href="#" class="dropdown-item ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon-dual icon-xs me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    <span>Email</span>
+                                </a>
+                                <a href="#" class="dropdown-item ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer icon-dual icon-xs me-2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                                    <span>Print</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file icon-dual icon-xs me-2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                                    <span>Re-Generate</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-row-items">
+                     <div class="boxes d-flex ">
+                        <div class="boxT-rev bg-white d-flex">
+                              <div class="left-side">
+                                   <p>TODAY REVENUE</p>
+                                   <h4>$2100</h4>
+                                </div>
+                                <div class="right-side-Svg">
+                                     <svg id="SvgjsSvg17396" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG17398" class="apexcharts-inner apexcharts-graphical" transform="translate(20, 0)"><defs id="SvgjsDefs17397"><clipPath id="gridRectMaskwu3rvxtg"><rect id="SvgjsRect17404" width="76" height="47" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskwu3rvxtg"><rect id="SvgjsRect17405" width="74" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient17410" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop17411" stop-opacity="0.45" stop-color="rgba(114,124,245,0.45)" offset="0.45"></stop><stop id="SvgjsStop17412" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop17413" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine17403" x1="55.5" y1="0" x2="55.5" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs apexcharts-active" x="55.5" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG17416" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG17417" class="apexcharts-xaxis-texts-g" transform="translate(0, 2.75)"></g></g><g id="SvgjsG17430" class="apexcharts-grid"><g id="SvgjsG17431" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine17433" x1="0" y1="0" x2="70" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17434" x1="0" y1="9" x2="70" y2="9" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17435" x1="0" y1="18" x2="70" y2="18" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17436" x1="0" y1="27" x2="70" y2="27" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17437" x1="0" y1="36" x2="70" y2="36" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17438" x1="0" y1="45" x2="70" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG17432" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine17440" x1="0" y1="45" x2="70" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine17439" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG17406" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG17407" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath17414" d="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" fill="url(#SvgjsLinearGradient17410)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskwu3rvxtg)" pathTo="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><path id="SvgjsPath17415" d="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" fill="none" fill-opacity="1" stroke="#727cf5" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskwu3rvxtg)" pathTo="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><g id="SvgjsG17408" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle17446" r="6" cx="56" cy="28.8" class="apexcharts-marker w7eeawv12i no-pointer-events" stroke="#ffffff" fill="#727cf5" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG17409" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine17441" x1="0" y1="0" x2="70" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine17442" x1="0" y1="0" x2="70" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG17443" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG17444" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG17445" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect17402" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG17429" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG17399" class="apexcharts-annotations"></g></svg>
+                                     <p class="ml-4 ">  10.21%</p>
+                                </div>
+                        </div>
+                         <div class="boxP-sold bg-white d-flex">
+                              <div class="left-side">
+                                   <p>PRODUCT SOLD</p>
+                                   <h4>558</h4>
+                                </div>
+                                <div class="right-side-Svg">
+                                     <svg id="SvgjsSvg24138" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg ml-4" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG24140" class="apexcharts-inner apexcharts-graphical" transform="translate(20, 0)"><defs id="SvgjsDefs24139"><clipPath id="gridRectMask6wrk8ejx"><rect id="SvgjsRect24146" width="76" height="47" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask6wrk8ejx"><rect id="SvgjsRect24147" width="74" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient24152" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop24153" stop-opacity="0.45" stop-color="rgba(247,126,83,0.45)" offset="0.45"></stop><stop id="SvgjsStop24154" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop24155" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine24145" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG24158" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG24159" class="apexcharts-xaxis-texts-g" transform="translate(0, 2.75)"></g></g><g id="SvgjsG24172" class="apexcharts-grid"><g id="SvgjsG24173" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine24175" x1="0" y1="0" x2="70" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24176" x1="0" y1="9" x2="70" y2="9" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24177" x1="0" y1="18" x2="70" y2="18" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24178" x1="0" y1="27" x2="70" y2="27" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24179" x1="0" y1="36" x2="70" y2="36" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24180" x1="0" y1="45" x2="70" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG24174" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine24182" x1="0" y1="45" x2="70" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine24181" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG24148" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG24149" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath24156" d="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" fill="url(#SvgjsLinearGradient24152)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask6wrk8ejx)" pathTo="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><path id="SvgjsPath24157" d="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" fill="none" fill-opacity="1" stroke="#f77e53" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMask6wrk8ejx)" pathTo="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><g id="SvgjsG24150" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle24188" r="0" cx="0" cy="0" class="apexcharts-marker w1xjezd9i no-pointer-events" stroke="#ffffff" fill="#f77e53" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG24151" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine24183" x1="0" y1="0" x2="70" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine24184" x1="0" y1="0" x2="70" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG24185" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG24186" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG24187" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect24144" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG24171" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG24141" class="apexcharts-annotations"></g></svg>
+                                     <p class="ml-5 ">  5.05%</p>
+                                </div>
+                        </div>
+                        <div class="boxN-customer bg-white d-flex">
+                            <div class="left-side">
+                                 <p>NEW CUSTOMER</p>
+                                 <h4>65</h4>
+                              </div>
+                              <div class="right-side-Svg">
+                                   <svg id="SvgjsSvg24190" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg ml-2" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG24192" class="apexcharts-inner apexcharts-graphical" transform="translate(20, 0)"><defs id="SvgjsDefs24191"><clipPath id="gridRectMaskrlkl86s5l"><rect id="SvgjsRect24198" width="76" height="47" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskrlkl86s5l"><rect id="SvgjsRect24199" width="74" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient24204" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop24205" stop-opacity="0.45" stop-color="rgba(67,211,158,0.45)" offset="0.45"></stop><stop id="SvgjsStop24206" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop24207" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine24197" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG24210" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG24211" class="apexcharts-xaxis-texts-g" transform="translate(0, 2.75)"></g></g><g id="SvgjsG24224" class="apexcharts-grid"><g id="SvgjsG24225" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine24227" x1="0" y1="0" x2="70" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24228" x1="0" y1="9" x2="70" y2="9" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24229" x1="0" y1="18" x2="70" y2="18" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24230" x1="0" y1="27" x2="70" y2="27" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24231" x1="0" y1="36" x2="70" y2="36" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24232" x1="0" y1="45" x2="70" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG24226" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine24234" x1="0" y1="45" x2="70" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine24233" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG24200" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG24201" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath24208" d="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" fill="url(#SvgjsLinearGradient24204)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskrlkl86s5l)" pathTo="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><path id="SvgjsPath24209" d="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" fill="none" fill-opacity="1" stroke="#43d39e" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskrlkl86s5l)" pathTo="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><g id="SvgjsG24202" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle24240" r="0" cx="0" cy="0" class="apexcharts-marker wemn2ogzp no-pointer-events" stroke="#ffffff" fill="#43d39e" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG24203" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine24235" x1="0" y1="0" x2="70" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine24236" x1="0" y1="0" x2="70" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG24237" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG24238" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG24239" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect24196" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG24223" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG24193" class="apexcharts-annotations"></g></svg>
+                                   <p class="ml-4 ">  25.16%</p>
+                              </div>
+                      </div>
+                      <div class="boxN-Visitor bg-white d-flex">
+                        <div class="left-side">
+                             <p>NEW VISITOR</p>
+                             <h4>958</h4>
+                          </div>
+                          <div class="right-side-Svg">
+                               <svg id="SvgjsSvg24242" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg ml-4" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG24244" class="apexcharts-inner apexcharts-graphical" transform="translate(20, 0)"><defs id="SvgjsDefs24243"><clipPath id="gridRectMaskp37y9auu"><rect id="SvgjsRect24250" width="76" height="47" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskp37y9auu"><rect id="SvgjsRect24251" width="74" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient24256" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop24257" stop-opacity="0.45" stop-color="rgba(255,190,11,0.45)" offset="0.45"></stop><stop id="SvgjsStop24258" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop24259" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine24249" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG24262" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG24263" class="apexcharts-xaxis-texts-g" transform="translate(0, 2.75)"></g></g><g id="SvgjsG24276" class="apexcharts-grid"><g id="SvgjsG24277" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine24279" x1="0" y1="0" x2="70" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24280" x1="0" y1="9" x2="70" y2="9" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24281" x1="0" y1="18" x2="70" y2="18" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24282" x1="0" y1="27" x2="70" y2="27" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24283" x1="0" y1="36" x2="70" y2="36" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine24284" x1="0" y1="45" x2="70" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG24278" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine24286" x1="0" y1="45" x2="70" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine24285" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG24252" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG24253" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath24260" d="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" fill="url(#SvgjsLinearGradient24256)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskp37y9auu)" pathTo="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><path id="SvgjsPath24261" d="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" fill="none" fill-opacity="1" stroke="#ffbe0b" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskp37y9auu)" pathTo="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><g id="SvgjsG24254" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle24292" r="0" cx="0" cy="0" class="apexcharts-marker wx1znyt3yl no-pointer-events" stroke="#ffffff" fill="#ffbe0b" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG24255" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine24287" x1="0" y1="0" x2="70" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine24288" x1="0" y1="0" x2="70" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG24289" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG24290" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG24291" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect24248" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG24275" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG24245" class="apexcharts-annotations"></g></svg>
+                               <p class="ml-5 ">  5.05%</p>
+                          </div>
+                  </div>
+
+                     </div>
+                </div>
+                <div class="container-fluid mt-4">
+                    <div class="boxes d-flex">
+                       <div class="box-overview bg-white">
+                             <div class="left-side p-2 d-flex">
+                                  <h7>OVERVIEW</h7>
+                                  <div class="dropdown overview-dropdown">
+                                    <a href="#" class="dropdown-toggle arrow-none text-muted" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="uil uil-ellipsis-v "></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            <i class="uil uil-refresh me-2"></i>Refresh
+                                        </a>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            <i class="uil uil-user-plus me-2"></i>Add New
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item text-danger">
+                                            <i class="uil uil-exit me-2"></i>Exit
+                                        </a>
+                                    </div>
+                                </div>
+                               </div>
+                               <div class="Lower-overviews mt-4 p-1">
+                                <div class="d-flex">
+                                <div class="left-item">
+                               <h5>121,000</h5>
+                               <p>Total Visitors</p>
+                            </div>
+                            <div class="right-items" style="margin-left: 5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users align-self-center icon-dual icon-md"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <div class="left-item">
+                           <h5>21,000</h5>
+                           <p>Total Product Views</p>
+                        </div>
+                        <div class="right-items" style="margin-left: 2.3rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image align-self-center icon-dual icon-md"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="left-item">
+                       <h5>$21.5</h5>
+                       <p>Revenue Per Visitors</p>
+                    </div>
+                    <div class="right-items" style="margin-left: 2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag align-self-center icon-dual icon-md"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                </div>
+                <hr>
+                <div class="view p-0 mb-1" style="margin-left:9rem ;" >
+                    <a href="">View all</a>
+                </div>
+                   </div>
+                               <!-- <div class="right-side-Svg">
+                                    
+                                    
+                               </div> -->
+                       </div>
+                        <div class="box-Revenue bg-white ">
+                             <div class="left-side p-2 d-flex">
+                                  <h7>REVENUE</h7>
+                                  <div class="dropdown revenue-dropdown">
+                                    <a href="#" class="dropdown-toggle arrow-none text-muted" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="uil uil-ellipsis-v"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" >
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            Today
+                                        </a>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            7 Days
+                                        </a>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            15 Days
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            1 Months
+                                        </a>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            6 Months
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <!-- item-->
+                                        <a href="#" class="dropdown-item">
+                                            1 Year
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+                               </div>
+                               <!-- <div class="right-side-Svg">
+                                    <svg id="SvgjsSvg17396" width="90" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG17398" class="apexcharts-inner apexcharts-graphical" transform="translate(20, 0)"><defs id="SvgjsDefs17397"><clipPath id="gridRectMaskwu3rvxtg"><rect id="SvgjsRect17404" width="76" height="47" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskwu3rvxtg"><rect id="SvgjsRect17405" width="74" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient17410" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop17411" stop-opacity="0.45" stop-color="rgba(114,124,245,0.45)" offset="0.45"></stop><stop id="SvgjsStop17412" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop><stop id="SvgjsStop17413" stop-opacity="0.05" stop-color="rgba(255,255,255,0.05)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine17403" x1="55.5" y1="0" x2="55.5" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs apexcharts-active" x="55.5" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG17416" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG17417" class="apexcharts-xaxis-texts-g" transform="translate(0, 2.75)"></g></g><g id="SvgjsG17430" class="apexcharts-grid"><g id="SvgjsG17431" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine17433" x1="0" y1="0" x2="70" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17434" x1="0" y1="9" x2="70" y2="9" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17435" x1="0" y1="18" x2="70" y2="18" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17436" x1="0" y1="27" x2="70" y2="27" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17437" x1="0" y1="36" x2="70" y2="36" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine17438" x1="0" y1="45" x2="70" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG17432" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine17440" x1="0" y1="45" x2="70" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine17439" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG17406" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG17407" class="apexcharts-series" seriesName="seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath17414" d="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" fill="url(#SvgjsLinearGradient17410)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskwu3rvxtg)" pathTo="M 0 45L 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003C 70 20.700000000000003 70 20.700000000000003 70 45M 70 20.700000000000003z" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><path id="SvgjsPath17415" d="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" fill="none" fill-opacity="1" stroke="#727cf5" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskwu3rvxtg)" pathTo="M 0 33.75C 2.4499999999999997 33.75 4.550000000000001 15.3 7 15.3C 9.45 15.3 11.55 26.55 14 26.55C 16.45 26.55 18.55 6.75 21 6.75C 23.45 6.75 25.55 16.650000000000002 28 16.650000000000002C 30.45 16.650000000000002 32.55 33.75 35 33.75C 37.45 33.75 39.55 25.2 42 25.2C 44.45 25.2 46.55 39.6 49 39.6C 51.45 39.6 53.55 28.8 56 28.8C 58.45 28.8 60.55 40.95 63 40.95C 65.45 40.95 67.55 20.700000000000003 70 20.700000000000003" pathFrom="M -1 45L -1 45L 7 45L 14 45L 21 45L 28 45L 35 45L 42 45L 49 45L 56 45L 63 45L 70 45"></path><g id="SvgjsG17408" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle17446" r="6" cx="56" cy="28.8" class="apexcharts-marker w7eeawv12i no-pointer-events" stroke="#ffffff" fill="#727cf5" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG17409" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine17441" x1="0" y1="0" x2="70" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine17442" x1="0" y1="0" x2="70" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG17443" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG17444" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG17445" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect17402" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG17429" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG17399" class="apexcharts-annotations"></g></svg>
+                                    <p class="ml-4 ">  10.21%</p>
+                               </div> -->
+                               <div class="graph-revenue">
+                               <div class="graph-img mt-2 p-3">
+                                    <img src="assets/img/Screenshot 2023-11-17 134818.png" alt="">
+                               </div>
+                            </div>
+                       </div>
+                       
+                     <div class="box-Target bg-white">
+                       <div class="left-side p-2 d-flex">
+                            <h7>TARGET</h7>
+                            <div class="dropdown target-overview">
+                                <a href="#" class="dropdown-toggle arrow-none text-muted" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">
+                                        <i class="uil uil-refresh me-2"></i>Refresh
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">
+                                        <i class="uil uil-user-plus me-2"></i>Add New
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item text-danger">
+                                        <i class="uil uil-exit me-2"></i>Exit
+                                    </a>
+                                </div>
+                            </div>
+                         </div>
+                         
+                         <div class="right-side-Svg">
+                              <img src="assets/img/target.png" alt="">
+                            
+                         </div>
+                 </div>
+
+                    </div>
+               </div>
+               <div class="container-fluid mt-4">
+                <div class="boxes d-flex">
+                   <div class="box-sales bg-white">
+                         <div class="left-side p-2 d-flex">
+                              <h6>SALES BY CATEGORY</h6>
+                              <div class="dropdown ">
+                                <a href="#" class="dropdown-toggle arrow-none text-muted sales-category" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">
+                                        <i class="uil uil-refresh me-2"></i>Refresh
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">
+                                        <i class="uil uil-user-plus me-2"></i>Add New
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item text-danger">
+                                        <i class="uil uil-exit me-2"></i>Exit
+                                    </a>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="right-side-Svg">
+                                <img src="assets/img/rounded-graph.png" alt="">
+                           </div>
+                   </div>
+                    
+                   
+                 <div class="box-orders bg-white">
+                   <div class="left-side p-2 d-flex order-btn">
+                        <h6>RECENT ORDERS</h6>
+                        <a href="" class="btn btn-primary btn-sm float-end">
+                            <i class="fa fa-upload"></i> Export
+                        </a>
+                     </div>
+                     <div class="right-side-Svg">
+                        <div class="table-responsive mt-4">
+                            <table class="table table-hover table-nowrap mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Customer</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#98754</td>
+                                        <td>ASOS Ridley High</td>
+                                        <td>Otto B</td>
+                                        <td>$79.49</td>
+                                        <td><span class="badge badge-soft-warning py-1">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#98753</td>
+                                        <td>Marco Lightweight Shirt</td>
+                                        <td>Mark P</td>
+                                        <td>$125.49</td>
+                                        <td><span class="badge badge-soft-success py-1">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#98752</td>
+                                        <td>Half Sleeve Shirt</td>
+                                        <td>Dave B</td>
+                                        <td>$35.49</td>
+                                        <td><span class="badge badge-soft-danger py-1">Declined</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#98751</td>
+                                        <td>Lightweight Jacket</td>
+                                        <td>Shreyu N</td>
+                                        <td>$49.49</td>
+                                        <td><span class="badge badge-soft-success py-1">Delivered</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#98750</td>
+                                        <td>Marco Shoes</td>
+                                        <td>Rik N</td>
+                                        <td>$69.49</td>
+                                        <td><span class="badge badge-soft-danger py-1">Declined</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                     </div>
+             </div>
+
+                </div>
+           </div>
+           <div class="container-fluid mt-4">
+            <div class="boxes d-flex">
+               <div class="box-performer bg-white">
+                     <div class="left-side">
+                          <h6>TOP PERFORMER</h6>
+                          <hr>
+                          <div class="performers d-flex">
+                                <img src="assets/img/avatar-7.jpg" class="rounded" alt="">
+                                <div class="name-dep">
+                                   <h5>Shreyu N</h5>
+                                 <h6>Senior Sales Guy</h6>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                    <a href="#" class="dropdown-toggle arrow-none text-muted performers-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="uil uil-ellipsis-v"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" >
+                                        <!-- item-->
+                                        <a href="#;" class="dropdown-item">
+                                            <i class="uil uil-edit-alt me-2"></i>Edit
+                                        </a>
+                                        <!-- item-->
+                                        <a href="#;" class="dropdown-item">
+                                            <i class="uil uil-exit me-2"></i>Remove from Team
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <!-- item-->
+                                        <a href="#;" class="dropdown-item text-danger">
+                                            <i class="uil uil-trash me-2"></i>Delete
+                                        </a>
+                                    </div>
+                                </div>
+                          </div>
+                          <hr>
+                          <div class="performers d-flex">
+                            <img src="assets/img/avatar-9.jpg" class="rounded" alt="">
+                            <div class="name-dep">
+                               <h5>Greeva Y</h5>
+                             <h6>Social Media Campaign</h6>
+                            </div>
+                            <div class="dropdown align-self-center">
+                                <a href="#" class="dropdown-toggle arrow-none text-muted" style="margin-left: 3.4rem;" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" >
+                                    <!-- item-->
+                                    <a href="#;" class="dropdown-item">
+                                        <i class="uil uil-edit-alt me-2"></i>Edit
+                                    </a>
+                                    <!-- item-->
+                                    <a href="#;" class="dropdown-item">
+                                        <i class="uil uil-exit me-2"></i>Remove from Team
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <!-- item-->
+                                    <a href="#;" class="dropdown-item text-danger">
+                                        <i class="uil uil-trash me-2"></i>Delete
+                                    </a>
+                                </div>
+                            </div>
+                      </div>
+                      <hr>
+                      <div class="performers d-flex">
+                        <img src="assets/img/avatar-4.jpg" class="rounded" alt="">
+                        <div class="name-dep">
+                           <h5>Nik G</h5>
+                         <h6>Inventory Manager</h6>
+                        </div>
+                        <div class="dropdown align-self-center">
+                            <a href="#" class="dropdown-toggle arrow-none text-muted " style="margin-left: 5.1rem;" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="uil uil-ellipsis-v"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" >
+                                <!-- item-->
+                                <a href="#;" class="dropdown-item">
+                                    <i class="uil uil-edit-alt me-2"></i>Edit
+                                </a>
+                                <!-- item-->
+                                <a href="#;" class="dropdown-item">
+                                    <i class="uil uil-exit me-2"></i>Remove from Team
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- item-->
+                                <a href="#;" class="dropdown-item text-danger">
+                                    <i class="uil uil-trash me-2"></i>Delete
+                                </a>
+                            </div>
+                        </div>
+                  </div>
+                  <hr>
+                  <div class="performers d-flex">
+                    <img src="assets/img/avatar-1.jpg" class="rounded" alt="">
+                    <div class="name-dep">
+                       <h5>Hardik G</h5>
+                     <h6>Sales Person</h6>
+                    </div>
+                    <div class="dropdown align-self-center">
+                        <a href="#" class="dropdown-toggle arrow-none text-muted " style="margin-left: 7.3rem;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="uil uil-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" >
+                            <!-- item-->
+                            <a href="#;" class="dropdown-item">
+                                <i class="uil uil-edit-alt me-2"></i>Edit
+                            </a>
+                            <!-- item-->
+                            <a href="#;" class="dropdown-item">
+                                <i class="uil uil-exit me-2"></i>Remove from Team
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- item-->
+                            <a href="#;" class="dropdown-item text-danger">
+                                <i class="uil uil-trash me-2"></i>Delete
+                            </a>
+                        </div>
+                    </div>
+              </div>
+              <hr>
+              <div class="performers d-flex">
+                <img src="assets/img/avatar-8.jpg" class="rounded" alt="">
+                <div class="name-dep">
+                   <h5>GB Patel G</h5>
+                 <h6>Sales Person</h6>
+                </div>
+                <div class="dropdown align-self-center">
+                    <a href="#" class="dropdown-toggle arrow-none text-muted " style="margin-left: 7.3rem;" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="uil uil-ellipsis-v"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" >
+                        <!-- item-->
+                        <a href="#;" class="dropdown-item">
+                            <i class="uil uil-edit-alt me-2"></i>Edit
+                        </a>
+                        <!-- item-->
+                        <a href="#;" class="dropdown-item">
+                            <i class="uil uil-exit me-2"></i>Remove from Team
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <!-- item-->
+                        <a href="#;" class="dropdown-item text-danger">
+                            <i class="uil uil-trash me-2"></i>Delete
+                        </a>
+                    </div>
+                </div>
+          </div>
+                          
+                       </div>
+                       <!-- <div class="right-side-Svg">
+                            
+                       </div> -->
+               </div>
+                <div class="box-task bg-white">
+                     <div class="left-side d-flex ">
+                          <h6>TASKS</h6>
+                          <button type="button" class="btn btn-primary task-btn btn-sm">View All</button>
+                       </div>
+                       <div class="task-items">
+                           <div class="mt-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="task2">
+                                <label class="form-check-label" for="task2">
+                                    Draft the new contract document for sales team
+                                </label>
+                                <p class="fs-13 text-muted">Due on 23 Aug, 2019</p>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="task2">
+                                <label class="form-check-label" for="task2">
+                                    iOS App home page
+                                </label>
+                                <p class="fs-13 text-muted">Due on 23 Aug, 2019</p>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="task2">
+                                <label class="form-check-label" for="task2">
+                                    Write a release note for Shreyu
+                                </label>
+                                <p class="fs-13 text-muted">Due on 23 Aug, 2019</p>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="task2">
+                                <label class="form-check-label" for="task2">
+                                    Invite Greeva to a project shreyu admin
+                                </label>
+                                <p class="fs-13 text-muted">Due on 23 Aug, 2019</p>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="task2">
+                                <label class="form-check-label" for="task2">
+                                    Enable analytics tracking for main website
+                                </label>
+                                <p class="fs-13 text-muted">Due on 23 Aug, 2019</p>
+                            </div>
+                                
+                           </div>
+                       </div>
+               </div>
+               
+             <div class="box-conversion bg-white">
+               <div class="left-side d-flex">
+                    <h6>RECENT CONVERSATION</h6>
+                    <div class="dropdown conversation-drop">
+                        <a href="#" class="dropdown-toggle arrow-none text-muted" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="uil uil-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="uil uil-refresh me-2"></i>Refresh
+                            </a>
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="uil uil-user-plus me-2"></i>Add New
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <!-- item-->
+                            <a href="#" class="dropdown-item text-danger">
+                                <i class="uil uil-exit me-2"></i>Exit
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="conversation-recent mt-4 ml-4 d-flex" style="overflow: auto;">
+                    <div class="first-person">
+                     <img src="assets/img/avatar-5.jpg" class="rounded-circle" width="36px" alt="">
+                     <p>10:00</p>
+                    </div>
+                    <div class="text-1 ml-1">
+                        <p>Geneva <br>Hello!</p>
+                    
+                    </div>
+                        
+                     </div>
+                     <div class="conversation-recent d-flex dominic-chat1">
+                        
+                        <div class="text2 mr-1">
+                            <p class="p-2">Dominic <br>Hi, How are you? What about our next meeting?</p>
+                            
+                        </div>
+                        <div class="first-person mr-4">
+                            <img src="assets/img/avatar-5.jpg" class="rounded-circle" width="36px" alt="">
+                            <p>10:01</p>
+                           </div>
+                            
+                         </div>
+                         <div class="conversation-recent ml-4 mt-2 d-flex">
+                            <div class="first-person">
+                             <img src="assets/img/avatar-5.jpg" class="rounded-circle" width="36px" alt="">
+                             <p>10:02</p>
+                            </div>
+                            <div class="text-1 ml-1">
+                                <p>Geneva <br>Yeah everything is fine</p>
+                                
+                            </div>
+                                
+                             </div>
+                             <div class="conversation-recent d-flex dominic-chat2">
+                        
+                                <div class="text2 mr-2">
+                                    <p class="p-2">Dominic <br>Wow that's great</p>
+                                    
+                                </div>
+                                <div class="first-person">
+                                    <img src="assets/img/avatar-5.jpg" class="rounded-circle" width="36px" alt="">
+                                    <p>10:03</p>
+                                   </div>
+                                    
+                                 </div>
+                                 <div class="d-flex mt-5 conversation-type">
+                                 <input type="text" id="text" name="text" placeholder="Enter Your Text" style="border: 1px solid rgba(0, 0, 0, 0.24); outline: none;">
+                                 <button type="button" class="btn btn-danger"> Send</button>
+                                </div>
+                         </div>
+                         
+                     </div>
+                     
+                     
+                 </div>
+                 
+            </div>
+
+            </div>
+            </div>
+            <hr>
+            <footer>
+            <div class="container-fluid">
+               <div class="Footer-items d-flex justify-content-between">
+                    <div class="Copyright mt-2 ">
+                        <p>2023 © Admin Theme By <a href="https://github.com/drkxjin">DRKxJIN</a></p>
+                    </div>
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="" class="nav-link">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Help</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link">Contact Us</a>
+                      </li>
+                    </ul>
+               </div>
+            </div>
+        </footer>
+            </div>
+            
+        </div>
+
+        <script>
+            document.getElementById('toggle-btn').addEventListener('click', function () {
+                var sidebar = document.getElementById('sidebar');
+                var navbar = document.getElementById('navbar');
+                var product = document.getElementById('product-information');
+                if (sidebar.style.width === '250px') {
+                    sidebar.style.width = '70px';
+                    navbar.style.width = '100%';
+                    navbar.style.left = '70px';
+
+                }
+                else {
+                    sidebar.style.width = '250px';
+                    navbar.style.width = 'calc(100% - 250px)';
+                    navbar.style.left = '250px';
+                }
+            });
+        </script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
