@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.table-input{
+     
+    background-color: transparent;
+    backdrop-filter: blur(14px);
+    border: 0.2px solid white;
+    box-shadow: 8px 8px 5px black;
+}
+.table-data{
+    background-color: transparent;
+    backdrop-filter: blur(14px);
+    border: 0.2px solid white;
+    height: 25rem;
+    box-shadow: 8px 8px 5px black;
+}
+.table-data{
+  color: rgb(31, 184, 211);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.table-input input{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(223, 213, 213);
+    outline: none;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    padding: 5px;
+}
+.table-input input::placeholder{
+    color: rgb(143, 137, 137);
+    padding: 4px;
+    
+
+}
